@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useHistory } from 'react-router';
 import './Read.css';
 import axios from 'axios';
 /*Material UI import starts*/
@@ -20,6 +21,18 @@ const Read = () => {
 
   //UseState Variables
   const [APIData, setAPIData] = useState([]);
+
+  let history = useHistory();
+
+  //Go to create page 
+  const goToCreateComp = () => {
+    history.push('/create');
+  }
+
+  //Go to update page 
+  const goToUpdateComp = () => {
+    history.push('/update');
+  }
 
   //GET and read the data when user loads the page
   useEffect(() => {
@@ -53,6 +66,7 @@ const Read = () => {
     localStorage.setItem('Last Name', lastName);
     localStorage.setItem('Contact Number', contact);
     localStorage.setItem('Email Id', email);
+    goToUpdateComp();
   }
 
   return (
@@ -88,7 +102,7 @@ const Read = () => {
                       <Button variant='outlined'
                         className='my-update-btn'
                         startIcon={<NoteAltOutlinedIcon />}
-                        type='submit' href='/update'
+                        type='submit'
                         onClick={() => setData(data)}>Update</Button>
                     </TableCell>
                     <TableCell align="center">
@@ -105,7 +119,7 @@ const Read = () => {
           </TableContainer>
           <div className="add-btn-section">
             <Button variant='contained'
-              href='/create'
+              onClick={goToCreateComp}
               startIcon={<PersonAddAltRoundedIcon />}
               sx={{ mt: 3 }} className='add-btn'>Add User</Button>
           </div>
