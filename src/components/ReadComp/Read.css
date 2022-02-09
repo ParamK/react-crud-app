@@ -1,0 +1,64 @@
+.read-section {
+    padding: 3rem 0;
+}
+.section-upper {
+    background-color: #3400b4;
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+.section-upper h2{
+    background-color: #fff;
+    /* color: #888a8d; */
+}
+.section-upper .search-input {
+    background-color: #fff;
+    width: 50%;
+    margin: 0 auto;
+}
+.MuiTableRow-root.my-table-row {
+    background-color: #fafafa;
+}
+.MuiTableRow-root.my-table-row th {
+    color: #888a8d;
+}
+.section-lower .MuiPaper-root{
+    border-radius: unset;
+}
+.section-lower .my-user-table {
+    border-collapse: unset;
+    padding: 2rem 3rem;
+}
+.MuiTableRow-root.my-table-data td {
+    border-bottom: 1px solid rgb(242 242 242);
+    font-weight: 700;
+}
+.MuiButton-root.my-update-btn {
+    color: #762cf1;
+    border: 1px solid #762cf1;
+    border-radius: 18px;
+    text-transform: unset;
+    padding: 10px 25px;
+}
+.MuiButton-root.my-delete-btn {
+    border-radius: 18px;
+    text-transform: unset;
+    padding: 10px 25px;
+}
+.add-btn-section {
+    display: flex;
+    justify-content: center;
+}
+.add-btn-section .add-btn {
+    color: #fff;
+    border-radius: 18px;
+    text-transform: unset;
+    padding: 10px 25px;
+    background-color: #8025ff;
+}
+
+@media(max-width:768px){
+    .section-lower .my-user-table{
+        padding: 1rem;
+    }
+}

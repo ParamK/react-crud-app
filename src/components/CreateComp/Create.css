@@ -1,0 +1,51 @@
+.create-section{
+    padding: 3rem 0;
+}
+/*Form Area starts*/
+
+.form-card{
+    border: 1px solid transparent;
+    box-shadow: 1px 1px 12px #888888;
+    max-width: 500px;
+    max-height: 500px;
+    margin: 0 auto;
+    background: #fff;
+}
+.form-area {
+    margin: 2rem 0;
+    padding: 0 2rem;
+}
+.main-heading{
+    background-color: #F8FAFB;
+    padding: 2rem 0;
+    text-align: center;
+}
+.main-heading h1{
+    font-size: 20px;
+}
+.form-btn-section {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.MuiButton-root.submit-btn{
+    background-color: #8025FF;
+    border-radius: 18px;
+    padding: 0.7rem 2rem;
+    min-width: 150px;
+    text-transform: unset;
+}
+.modal-title{
+    color: green;
+}
+.MuiBox-root.modal-box{
+    text-align: center;
+}
+/*Form Area ends*/
+
+/*Responsive Media Queries*/
+@media(max-width:375px){
+    .MuiBox-root.modal-box{
+        width: 329px;
+    }
+}
